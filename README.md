@@ -20,10 +20,10 @@ sudo luarocks install serpent
 
 lua bot.lua
 </pre>
-<h1>چنل ما<h1>
-<a href="telegram.me/beyondteam">beynd</a>
+<h1>چنل ما</h1>
+<a href="telegram.me/beyondteam"><h3>beyond</h3></a>
 <h1>خز کننده</h1>
-<a href="telegram.me/CleverGuy">CleverGuy</a>
+<a href="telegram.me/CleverGuy"><h3>CleverGuy</h3></a>
 
 سوالی بود در خدمتم
 موفق باشید
