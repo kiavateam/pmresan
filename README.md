@@ -18,7 +18,8 @@ sudo luarocks install serpent
 
 و در اخر
 
-lua bot.lua
+screen lua bot.lua
+
 </pre>
 <h1>چنل ما</h1>
 <a href="telegram.me/beyondteam"><h3>beyond</h3></a>
