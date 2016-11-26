@@ -19,10 +19,10 @@ function run(msg)
 	.."     /end\n   اتمام چت\n\n"
 	.."     /spam {id,num,text}\n   اسپم دادن\n\n"
 	.."     /key\n   کيبرد ادمين\n\n"
-	about_txt = "ربات پیام رسان نسخه vip-"..bot_version.."\nبا قابلیت اینلاین!\n\n`از طریق این ربات حتی اگر ریپورت هم باشید میتوانید با من چت کنید. برای این کار کافیست که یک درخواست چت برایم ارسال کنید و منتظر باشید تا آن را قبول کنم. میتونید از طریق کلید مربوطه شمارتونو برام بفرستید تا در صورت لزوم با شما تماس بگیرم. این ربات قابلیت های دیگه هم داره، میتونید بیوگرافیمو بخونید، شمارمو از  ربات دریافت کنید یا حتی در نسخه ی وی آی پی میتونید از طریق ربات برام اس ام اس ارسال کنید تا اگر به اینترنت دسترسی نداشتم هم پیام شما به من برسه. از طریق قابلیت اینلاین در هر کجا میتونید شماره و در صورت وجود، بیوگرافیمو به اشتراک بذارید.`\n\nاگر مایل به هستید از این ربات برای خودتون داشته باشید، با سازنده ی من تماس بگیرید، اطلاعات تماس سازنده در لینکهای زیر است. این ربات توسط تیم قدرتمند آمبرلا طراحی و ساخته شده است."
-	about_key = {{{text = "وبسایت تیم آمبرلا" , url = "http://Umbrella.shayan-soft.ir"}},{{text = "کانال تیم آمبرلا" , url = "https://telegram.me/UmbrellaTeam"}},{{text = "پیام رسان سازنده" , url = "https://telegram.me/shayansoftBot"}},{{text = "مهندس شایان احمدی" , url = "https://telegram.me/shayan_soft"}}}
-	start_txt = "سلام دوست عزيز\n\n`از طریق این ربات حتی اگر ریپورت باشی هم میتونی با من چت کنی. این ربات قابلیت های دیگه ای هم داره که از کیبرد زیر میتونی بهشون دست پیدا کنی. اگر از این ربات پیشرفته ی پیام رسان نیاز داری، روی کلید زیر کلیک کن. این ربات رایگان نیست و توسط تیم قدرتمند آمبرلا طراحی و ساخته شده.`"
-	start_key = {{{text="ساخت ربات پیام رسان",url="https://telegram.me/shayansoftbot"}}}
+	about_txt = "ربات پیام رسان نسخه vip-"..bot_version.."\nبا قابلیت اینلاین!\n\n`از طریق این ربات حتی اگر ریپورت هم باشید میتوانید با من چت کنید. برای این کار کافیست که یک درخواست چت برایم ارسال کنید و منتظر باشید تا آن را قبول کنم. میتونید از طریق کلید مربوطه شمارتونو برام بفرستید تا در صورت لزوم با شما تماس بگیرم. این ربات قابلیت های دیگه هم داره، میتونید بیوگرافیمو بخونید، شمارمو از  ربات دریافت کنید یا حتی در نسخه ی وی آی پی میتونید از طریق ربات برام اس ام اس ارسال کنید تا اگر به اینترنت دسترسی نداشتم هم پیام شما به من برسه. از طریق قابلیت اینلاین در هر کجا میتونید شماره و در صورت وجود، بیوگرافیمو به اشتراک بذارید.`\n\nاگر مایل به هستید از این ربات برای خودتون داشته باشید، با سازنده ی من تماس بگیرید، اطلاعات تماس سازنده در لینکهای زیر است. این ربات توسط تیم قدرتمند کیاوا تیم طراحی و ساخته شده است."
+	about_key = {{{text = "وبسایت تیم کیاوا" , url = "http://kiava.ir"}},{{text = "کانال تیم کیاوا" , url = "https://telegram.me/KiavaTeam"}},{{text = "پیام رسان سازنده" , url = "https://telegram.me/MohammadBot"}}}
+	start_txt = "سلام دوست عزيز\n\n`از طریق این ربات حتی اگر ریپورت باشی هم میتونی با من چت کنی. این ربات قابلیت های دیگه ای هم داره که از کیبرد زیر میتونی بهشون دست پیدا کنی. اگر از این ربات پیشرفته ی پیام رسان نیاز داری، روی کلید زیر کلیک کن. این ربات رایگان نیست و توسط تیم قدرتمند کیاوا تیم طراحی و ساخته شده.`"
+	start_key = {{{text="ساخت ربات پیام رسان",url="https://telegram.me/MohammadNBG"}}}
 	keyboard = {{"ارسال درخواست چت"},{{text="ارسال شماره شما به من",request_contact=true},{text="ارسال مکان شما به من",request_location=true}},{"شماره من","ارسال پیامک به من"},{"بیوگرافی من","ربات نسخه"..bot_version}}
 	------------------------------------------------------------------------------------
 	blocks = load_data("blocks.json")
@@ -116,13 +116,13 @@ function run(msg)
 			elseif #target == 2 then
 				send_msg(admingp, "`شخص مورد نظر در حال اسپم خوردن است`\n_Your target_ *Spamming*", true)
 				for i=1,tonumber(target[2]) do
-					send_msg(tonumber(target[1]), "Umbrella team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmbrella Team")
+					send_msg(tonumber(target[1]), "Kiava team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKiava Team")
 				end
 				return send_msg(admingp, "`اسپم به اتمام رسید`\n_Spamming_ *Stoped*", true)
 			else
 				send_msg(admingp, "`شخص مورد نظر در حال اسپم خوردن است`\n_Your target_ *Spamming*", true)
 				for i=1,100 do
-					send_msg(tonumber(target[1]), "Umbrella team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmbrella Team")
+					send_msg(tonumber(target[1]), "Kiava team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKiava Team")
 				end
 				return send_msg(admingp, "`اسپم به اتمام رسید`\n_Spamming_ *Stoped*", true)
 			end
@@ -283,7 +283,7 @@ function run(msg)
 			else
 				infotxts = ""
 			end
-			bioinfo = infotxts.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [Umbrella Team](https://telegram.me/umbrellateam)"
+			bioinfo = infotxts.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [Kiava TEAM](https://telegram.me/KiavaTeam)"
 			send_msg(msg.chat.id, bioinfo, true)
 			local f = io.open("./avatar.webp")
 			if f then
@@ -497,8 +497,8 @@ function inline(msg)
 	else
 		infotxtin = ""
 	end
-	bioinfo = infotxtin.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [Umbrella Team](https://telegram.me/umbrellateam)"
-	tabless = '[{"text":"اکانت اصلی من","url":"https://telegram.me/'..sudo_user..'"}],[{"text":"کانال شخصی من","url":"https://telegram.me/'..sudo_ch..'"}],[{"text":"کانال سازنده","url":"https://telegram.me/umbrellateam"},{"text":"سازنده ربات","url":"https://telegram.me/shayansoftbot"}]'
+	bioinfo = infotxtin.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [Kiava Team](https://telegram.me/KiavaTeam)"
+	tabless = '[{"text":"اکانت اصلی من","url":"https://telegram.me/'..sudo_user..'"}],[{"text":"کانال شخصی من","url":"https://telegram.me/'..sudo_ch..'"}],[{"text":"کانال سازنده","url":"https://telegram.me/KiavaTeam"},{"text":"سازنده ربات","url":"https://telegram.me/MohammadNBGbot"}]'
 	info_inline = '{"type":"article","parse_mode":"Markdown","id":"2","title":"بیوگرافی من","description":"هر آنچه درباره من باید بدانید...","message_text":"'..bioinfo..'","thumb_url":"'..thumb..'pv_bio.png","reply_markup":{"inline_keyboard":['..tabless..']}}'
 	phone_inline = '{"type":"contact","id":"1","phone_number":"'..sudo_num..'","first_name":"'..sudo_name..'","last_name":"","thumb_url":"'..thumb..'pv_phone.png"},'
 	return send_req(send_api.."/answerInlineQuery?inline_query_id="..msg.id.."&is_personal=true&cache_time=1&results="..url.escape('['..phone_inline..info_inline..']'))
