@@ -1,4 +1,4 @@
-bot_token = "318554352:AAHGKf6AerrYo2TAiQIsZVLAa515OG0IBtY"
+bot_token = "320356986:AAHuVomKpfbDmKwaPgFN0dkL7AKNN6AH8KM"
 send_api = "https://api.telegram.org/bot"..bot_token
 bot_version = "6.0"
 sudo_name = "Mohammad NBG"
